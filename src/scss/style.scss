@@ -1,0 +1,102 @@
+// VARIABLES
+$bg-color:#333;
+$font-color: #fff;
+$primary-color: #008ed6;
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$landing-icon-size: 30px;
+
+$secondary-bg-color: #fff;
+$secondary-color: rgb(37, 205, 205);
+$secondary-font-color: #333;
+
+
+
+// STYLING
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: 0.8;
+}
+
+
+#home-section {
+  background: url('../img/home.jpg') no-repeat center top fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .home-inner {
+    padding-top: 150px;
+  }
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+  }
+
+  .card-form {
+    opacity: 0.8;
+  }
+
+  .fa {
+    color: $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $landing-icon-size;
+  }
+
+}
+
+#contactModal {
+  color: $secondary-font-color;
+}
+
+
+#therapy {
+
+  .fa {
+    color:#fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $landing-icon-size;
+  }
+
+}
+
+#about {
+  background: url(../img/therapy1.jpg) no-repeat center top fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .card {
+    opacity: 0.8;
+  }
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 576px) {
+	nav .container {
+	    width: 100%;
+	}
+
+  #home-section {
+    background: url('../img/therapy2.jpg') no-repeat center top fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    // min-height: 1354px; USE IF REMOVE d-none FROM HEADER 8 COLUMN
+  }
+}
