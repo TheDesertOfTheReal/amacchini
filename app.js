@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 //////////////////////////////////////////////
 // LISTENING
 //////////////////////////////////////////////
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8000
 app.listen(port, () => {
   console.log(`server is up and running on PORT:${port}`);
 });
